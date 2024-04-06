@@ -22,7 +22,7 @@ from random import choice as cc
 from random import randrange as rr
 from faker import Faker
 yy='azertyuiopmlkjhgfdsqwxcvbn'
-@app.get('/api/gmail/{gmail}')
+@app.get('/api2/{gmail}')
 async def ga(gmail: str, request: Request):
 	from requests import post
 	email=gmail
