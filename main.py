@@ -74,7 +74,7 @@ async def ga(email):
     	r=rr1,name
     	r = "".join(random.choice(r) for i in range(1))
     	#r=random.choice(name,rr1)
-    	r=f"{r}@hotmail.com"
+    	r=f"{r}@gmail.com"
     	r={"email":f"{r}"}
     	return         JSONResponse(content=r)
 #uvicorn.run(app,host='0.0.0.0',port=8080)
