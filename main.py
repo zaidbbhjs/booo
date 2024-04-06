@@ -22,7 +22,7 @@ from random import choice as cc
 from random import randrange as rr
 from faker import Faker
 yy='azertyuiopmlkjhgfdsqwxcvbn'
-@app.get('/api/{gmail}')
+@app.get('/api/gmail/{gmail}')
 async def ga(gmail: str, request: Request):
 	from requests import post
 	email=gmail
@@ -55,9 +55,10 @@ async def ga(gmail: str, request: Request):
  
  'ig_sig_key_version':'4',
  }
-	s=post(url,headers=h,data=da).text
+	s=post(url,headers=h,data=da).json()
  #print(s)
-	if '"تم إرسال البريد الإلكتروني"' in s:
+	if s["status"]=="ok":
+		
 		return         JSONResponse(content={"status":"Good"})
 	else:
 		return         JSONResponse(content=s)
