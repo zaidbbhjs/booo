@@ -8,7 +8,7 @@ import json,faker
 from user_agent import generate_user_agent
 from fastapi.responses import JSONResponse
 from fastapi import FastAPI
-import secrets
+import secrets,uuid
 cok = secrets.token_hex(8) * 2
 app = FastAPI()
 a=int(0)
