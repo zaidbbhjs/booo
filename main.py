@@ -128,14 +128,14 @@ async def tik():
 			'status':'unavailable',
 			'email':email,
 			}
-			    	return JSONResponse(content=data)
+			    	return data
 		elif "فشل في الربط، تم ربط صندوق البريد بالحساب الآخر"in res:
 			data={
 			'dev':'@instagram',
 			'status':'available',
 			'email':email,
 			}
-			    	return JSONResponse(content=data)
+			    	return data
 		else:
 			return 'false'
 
