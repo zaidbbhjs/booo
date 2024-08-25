@@ -88,6 +88,6 @@ async def tik(email):
 			}
 			return data
 		else:
-			return 'false'
+			return res
 
 #uvicorn.run(app,host='0.0.0.0',port=8080)
