@@ -19,51 +19,26 @@ async def tik(email):
 		sis = str(uuid.uuid4()).replace('-', '')
 		url =f'https://api22-normal-c-alisg.tiktokv.com/passport/email/bind_without_verify/?passport-sdk-version=19&iid=7372841843832473349&device_id=7194351170030650885&ac=WIFI&channel=googleplay&aid=1233&app_name=musical_ly&version_code=310503&version_name=31.5.3&device_platform=android&os=android&ab_version=31.5.3&ssmix=a&device_type=Infinix+X6816&device_brand=Infinix&language=ar&os_api=30&os_version=11&openudid=3293d1a6e9361cb7&manifest_version_code=2023105030&resolution=720*1568&dpi=303&update_version_code=2023105030&_rticket=1722418820230&is_pad=0&current_region=IQ&app_type=normal&sys_region=IQ&mcc_mnc=41805&timezone_name=Asia%2FBaghdad&carrier_region_v2=418&residence=IQ&app_language=ar&carrier_region=IQ&ac2=wifi5g&uoo=0&op_region=IQ&timezone_offset=10800&build_number=31.5.3&host_abi=arm64-v8a&locale=ar&region=IQ&content_language=ar%2C&ts=1722418819&cdid=556d8162-2721-4760-a509-a92b3cf27738&support_webview=1&cronet_version=2fdb62f9_2023-09-06&ttnet_version=4.2.152.11-tiktok&use_store_region_cookie=1'
 		headers = {
-    "Host": "api22-normal-c-alisg.tiktokv.com",
-    "Content-Length": "95",
-    "Cookie": (
-        "passport_csrf_token=98153892f65b8d33f0fc4ffe571fe6ff; "
-        "passport_csrf_token_default=98153892f65b8d33f0fc4ffe571fe6ff; "
-        "d_ticket=9281ab6b344229e79a37b09d997ffd31c1a0f; "
-        "multi_sids=7276401311359534085%3A14a2ae47be8dc51939df2969e4159dae%7C7320680702445503493%3A7a7e5835dfc5299e7ac584e090f6e8e2; "
-        "cmpl_token=AgQQAPOGF-RPsLTEFtdG9108-bbhdjiI_4csYNYVRg; "
-        "uid_tt=2507bbf000c73643b0480fdda21ecfd3015ddb85664c0a9ec8744a812eb35856; "
-        "uid_tt_ss=2507bbf000c73643b0480fdda21ecfd3015ddb85664c0a9ec8744a812eb35856; "
-        "sid_tt={sis}; "
-        "sessionid={sis}; "
-        "sessionid_ss={sis}; "
-        "store-country-code=tr; "
-        "store-country-code-src=uid; "
-        "install_id=7372841843832473349; "
-        "ttreq=1$95ba7cef3ab3446401e85f477fec283b1f0356ed; "
-        "tt-target-idc-sign=znspePrEB2B5KD8K2lCDdggj4Lrw0uZD8o8bYY-w9vx1Z9klJbqvQgGeyl3E8sUGqwqHik_mH1KG6A5VVp__l3LlnWqVrDfjEzg9pcMtVEorYAHJ6Toep-EcMgXE-xS-3cOJwT1Qf5BUZiBoSeg0tnnZBVNK1JsWC-ntQlEGynwHnHW9i027cg1PQ3-umOPXjgbV1OEixU38LwPGQbJWkuX7v8RyMxVp3THNii4nXtbAvhBR7bm_o1VhlMlMn40SQuT9R8yWkQc6RL-HjDh_vLmUg4u1cbQddaqFaV9_m3xSMN96XIWp6MnyF052aO4xZHu9FKbDv_at-nQYCGW-cQKbnnyE69dDs0TE5kW9UT8reh6ZBsjJksItUaixkcAXkyMmkZkceMyRDkUvzTQm2PrsZP9QaKFGKnJJZx54L5wXWJfvRVQgvi0Ww3yzNbSo5h_k989r0nnMBlO8ukkfznwf5KrceuLTfncX1WQ9LVQkzQUhhmv9OOpgCdekXT5C; "
-        "store-idc=alisg; "
-        "tt-target-idc=alisg; "
-        "odin_tt=4dfb813064a0a02517fb0dd3c1009e809bf0ce448947afa034d0e32c795874310203125b5dbae1bc50184a186676c5036593fa5d3ac1d8bff3c8fd7eec825de0b6faf9abdc1bdba28833e68fef89b1f1; "
-        "sid_guard=14a2ae47be8dc51939df2969e4159dae%7C1722418253%7C15552000%7CMon%2C+27-Jan-2025+09%3A30%3A53+GMT; "
-        "msToken=-7MZX1FGwui41BUSmMF7rmPZte5XSTuOPjeS9D4x3s_4H_ipjHFhhVAgIwDftSWW_3gcy5E2dlCVmid0AQKv9VxfDjtlODra8cMmfK67iolTKbCX_MU0YxgpWnM="
-    ),
-    "x-tt-multi-sids": "7276401311359534085%3A14a2ae47be8dc51939df2969e4159dae%7C7320680702445503493%3A7a7e5835dfc5299e7ac584e090f6e8e2",
-    "sdk-version": "2",
-    "x-bd-kmsv": "0",
-    "x-tt-token": "0314a2ae47be8dc51939df2969e4159dae04ef342ee9f3bc17179723f2a65bf392603ac44a608f46b8107ebacfd96f2593ae1b301551fa2740d8ce6ca3ab08b9cd60ca9fbb4fddfb32f2ea68c016c71a8495cd41c7d712c40219d6948fe23f6866220-1.0.1",
-    "x-ss-req-ticket": "1722418820234",
-    "multi_login": "1",
-    "x-tt-passport-csrf-token": "98153892f65b8d33f0fc4ffe571fe6ff",
-    "passport-sdk-version": "19",
-    "x-tt-dm-status": "login=1;ct=1;rt=1",
-    "x-vc-bdturing-sdk-version": "2.3.3.i18n",
-    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "x-ss-stub": "EF371AB22B36112B4E3777D59B57E7BF",
-    "x-ss-dp": "1233",
-    "x-tt-trace-id": "00-082976481063d778459717c605a804d1-082976481063d778-01",
-    "User-Agent": "com.zhiliaoapp.musically/2023105030 (Linux; U; Android 11; ar_IQ; Infinix X6816; Build/RP1A.200720.011; Cronet/TTNetVersion:2fdb62f9 2023-09-06 QuicVersion:bb24d47c 2023-07-19)",
-    "Accept-Encoding": "gzip, deflate, br",
-    "x-argus": "hYHSZacQ+SDgjlhp+GYTPATrp4KSxeMsHQySzlh5C4d7w07Cy/3kgo5M8Z2xffqwtvplj4D9mpyLjkrSxhYMrnMxuUo+zjWEC1vnuYSJ6SCnx3jNNrpAMGoJLptuSLDI32yTtCAF6I2CRxlfM3sDQFE++w5/cLMuNPH7oZMoC7hdF+oSimYO1yKIofoIa42nGjcHeES/wlmeYELVLE8jP7Zv9Y96TnziC3CLUL5rgwNisVnl+myJ7Om7f1ee/NEITKCB02v6dWxBdevWv6YU8xbar/XFgay1xjOqau6hAhBfl2zlGLI2GCcFuO0awp/76qFrUVspD5kJFIknREqMZuBZc7XwrGL1zBG2i2dLJ0L8xlf7nnXNJDcHaYJN/k2fgk20670sTHMwSU/2n3qjuoFnlmRvBtkbK9aZhXK6UsZBc7wfXFGtvo7mMEFNMx0bGBXeV0W3nMFUEBvQ8DSyz1sR8cX/TgcXki8fqv66hzqv7gKnoCpVg4DJLPX8BCoaCmbF8E8wY2I8LINdnUnCS171hAApx2OVCtdRChfZO2vm3aVH3FSpLZ7+3IiFmeFFqNnSiP3WFGPkZLjQzLcryRGN6okMTWYmzI8WEmD917+0rCVT1BGBeaz7y6376Hf0oaA=",
-
-    "x-gorgon": "8404d0be100059d8c5deec6af320f9083a816ca0b153a10453d5",
-    "x-khronos": "1722418817",
-    "x-ladon": "AjUiHZeEpusLBby98MCwh8Po6zMm5xpdn8owe0nCNu1wuUYq"
+  'User-Agent': "com.zhiliaoapp.musically/2023105030 (Linux; U; Android 10; ar; JSN-L22; Build/HONORJSN-L22; Cronet/TTNetVersion:2fdb62f9 2023-09-06 QuicVersion:bb24d47c 2023-07-19)",
+  'x-tt-multi-sids': "7244263196788589573%3A2d2c64d5b9a84a83e99bcb51271fb05d",
+  'sdk-version': "2",
+  'x-bd-kmsv': "0",
+  'x-tt-token': "032d2c64d5b9a84a83e99bcb51271fb05d018e06f3998ef8a2cebb5e435736eeaa137afdbf072731d98083650d11370e5d3143cadb7a8643febe4e3f3e212bc1d8031ef99ac847f59944de00c13e7b4ba1d784fd20ec289b1a82c538d53b85530142c-CkAxNWMyOWY1MjRiZWQ5NTVjMDFhNjcwZDBjZmJkNjdlMjhiYmFkNDU1MDlmZmI1ZTdiNDUzNjc3YmZhOGFhNTEx-2.0.0",
+  'x-ss-req-ticket': "1724143814731",
+  'multi_login': "1",
+  'x-tt-passport-csrf-token': "ee8d571c5f8416fdf751859e04ac0ad9",
+  'passport-sdk-version': "19",
+  'x-tt-dm-status': "login=1;ct=1;rt=1",
+  'x-vc-bdturing-sdk-version': "2.3.3.i18n",
+  'content-type': "application/x-www-form-urlencoded; charset=UTF-8",
+  'x-ss-stub': "D262610E98D24EF465AA71E6A097CF5D",
+  'x-ss-dp': "1233",
+  'x-tt-trace-id': "00-6efac9ee1066a4dfacf15306062704d1-6efac9ee1066a4df-01",
+  'x-argus': "bxXR7LRluRVi4V9JqQedEaYLIa3vWo2w1dLzN2YTVq0iRq1hykdgtDp+5Fl822k0wZs+Wc2CB3ZxCzZXcwBJV32hLfGBKmeAREs1GsB18eWQvBvtJix7ofOmchDpoiITcD5lOVFeVhYnIyGD566J6BxYgRt5AnffkxtdG+iHXeB+K9FmxpLi65UaQiMgo/SSvsT5jlHwAPI18Mzb29y/30i8xH5RQ2gGY2Dwb0husl77s53e80z9FdxqVkU3gOQ2fUZls6CcNa9Na+rmdjlxsYrtN3wK6IJwihHkPiKeVpp/qbxxo7hkKH2wQQMDpOsQ9voCyFXjZloYawTd3nLDAuv+4t4sTsD0uV4b8L9oxhp5sNfwEGQ9I4C9v2rT8dWjLTc9Ypmlq3BYXCo4Fv5/4vnzwlAjWhleIpVVkuJu4cVl4V7CdZz8610h7uz7f0c4m7QjehGO5Auek/saLoiyEyxz7ETVHQBhxZPAWp0roGBgKUNk++44TqFh1/O481W+bkaMuJwcbTP5DKo+JHIQZ+GyEMT6Avp+tp5FjZgd3SHyf42K6bTJkGRktYpo9PPJVL/jOmoCJaIGwpqvRPnVvpDqYZRYuTe89cbL1VS/YHPeeBSBMFHX2XoBLtbRD+Ys0FE=",
+  'x-gorgon': "8404c0c2100001af2c41ffe6895b664c319707c5a8668a4f1214",
+  'x-khronos': "1724230210",
+  'x-ladon': "xwZIesnERjW/UuJrHJxbf8xohz9Ah16FyPN2MgAQXD78FU25",
+  'Cookie': f"d_ticket=db235bee19a1476e2ef95518d7a2dee83ec0d; multi_sids=7244263196788589573%3A2d2c64d5b9a84a83e99bcb51271fb05d; cmpl_token=AgQQAPOnF-RPsLS2JFlgN908_MVGn17MP4QsYNXyiQ; uid_tt=c54c21eceaa2ebb88b3a456e7842cd5262f130c02abe4dd630c8470cb86bae6b; uid_tt_ss=c54c21eceaa2ebb88b3a456e7842cd5262f130c02abe4dd630c8470cb86bae6b; sid_tt={sis}; sessionid={sis}; sessionid_ss={sis}; store-idc=alisg; store-country-code=iq; store-country-code-src=uid; tt-target-idc=useast1a; passport_csrf_token=ee8d571c5f8416fdf751859e04ac0ad9; passport_csrf_token_default=ee8d571c5f8416fdf751859e04ac0ad9; install_id=7403493772548310790; ttreq=1$58be297161337571038dfa70fc0073b16be6df3b; sid_guard=2d2c64d5b9a84a83e99bcb51271fb05d%7C1724008592%7C15552000%7CFri%2C+14-Feb-2025+19%3A16%3A32+GMT; odin_tt=93f3b994509ee8d4a9a6719c29884e8058d3311aa04bffd5f8a8e36827f81fff9b80bf53f6f7604c325532e7dd0e75685e2bea61f0601f6bd5c22601cc0ff4fb2c637d19a6e60e7da3a46a1361658e31; msToken=I0STMc-_BNKhyh_k1FEFXAplbxMJM0OKZuwQZgtr-BVGH_zTOFKO3TJ2M6GhZax2K_fGTtPGCw3mspX8NZrIGQCS9eSQ1BUMYlILQA5m8bnvvv4scZTeDwwrhWL3"
 }
 		data = {
     "account_sdk_source": "app",
